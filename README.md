@@ -8,7 +8,7 @@ Python tests with the usage of `Tox` and `Sphinx` packages.
 
 Tox and pytest tools usage
 
-![](docs/img/tox.png)
+![](docs/img/)
 ### Installing the requirements
 ```bash
 pip install -r requirements.txt

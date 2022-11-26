@@ -14,8 +14,11 @@ Runs the suggested function with the help of Github Workflows.
       - name: Install tox and any other packages
         run: pip install -r requirements.txt
       - name: Run Pytest
-        # Run tox using the version of Python in `PATH`
         run: pytest tests/
+      - name: Run Tox
+        run: tox
+      - name: Run Poetry
+        run: poetry install
 ```
 
 ## Pytest
