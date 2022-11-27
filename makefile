@@ -13,5 +13,9 @@ poetry-venv: ## Configure poetry virtual environment
 	@poetry config virtualenvs.in-project true
 	@poetry add $( cat requirements.txt )
 
+sphinx-docs:
+	@sphinx-apidoc -o docs tests/
+	@cd docs && make html
+
 .PHONY: all-poetry
 all-poetry: poetry-venv poetry poetry-info
