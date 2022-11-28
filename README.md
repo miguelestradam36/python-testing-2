@@ -1,15 +1,17 @@
 # Python Tests
 
-Python tests with the usage of `Tox` and `Sphinx` packages.
+Python tests with the usage of `Tox`, `Poetry` and `Sphinx` packages.
 
 `Github Workflows` implemented for testing.
 
 ## About the project
 
-Tox and pytest tools usage
+Poetry Tox and pytest tools usage
 
-![](docs/img/)
+![](docs/img/icon.png)
+
 ### Installing the requirements
+
 ```bash
 pip install -r requirements.txt
 ```
@@ -20,6 +22,11 @@ pytest tests
 or
 ```bash
 tox
+```
+or
+```bash
+poetry install
+poetry run pytest tests/
 ```
 ## Documentation
 
